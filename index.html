@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TRANSFORME SUA MENSAGEM</title>
+    <link href="./src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+      <h1 class="maintitle">by: Brian C.</h1>
+    <div>
+      <p><strong>DIGITE A SUA MENSAGEM:</strong> </p><input type="text" id="texto">
+      <p><strong>INFORME UM NÚMERO:</strong></p><input type="number" id="deslocamento">
+    </div>
+
+    <div>
+      <br>
+      <button class=button1 onclick="cifrar()">Codificar</button>
+      <button class=button1 onclick="decifrar()">Decifrar</button>
+	   <button class=button1 onclick="base64()">base64</button>
+    </div>
+
+          <br></br>
+
+    <div>
+      <p><label for="textocifrado"><strong>VEJA A SUA MENSAGEM:</strong></label></p>
+      <textarea id="textocifrado" name="Seu Texto"></textarea>
+
+      <script src="./src/cipher.js"></script>
+      <script src="./src/tests.js"></script>
+
+  </body>
+</html>

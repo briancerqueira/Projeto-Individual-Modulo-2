@@ -63,17 +63,16 @@ function cypherDec(texto, numDesloc) {
     }
 
 function base64() {
-  let texto = document.getElementById("texto64").value;
-  let numDesloc = parseInt(document.getElementById("deslocamentobase64").value);
+  let texto = document.getElementById("texto").value;
+  let numDesloc = parseInt(document.getElementById("deslocamento").value);
 
-  document.getElementById("texto64").innerHTML = base64metodo(texto);
+  document.getElementById("textocifrado").innerHTML = base64metodo(texto);
 }
 
 function base64metodo(texto) {
 
-let texto = document.getElementById("texto64").value;
+var texto = document.getElementById("texto").value;
 let texto64 = window.btoa(texto);
-    return textoCodificado64;
+  return texto64;
  
 }
- 
